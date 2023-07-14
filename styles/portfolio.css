@@ -75,6 +75,14 @@ p {
 .project-description {
   padding: 120px 60px;
 }
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
 
 @media (max-width: 900px) {
   h1 {
