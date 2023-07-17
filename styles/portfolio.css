@@ -7,7 +7,7 @@
 
 body {
   font-family: var(--default-font-family);
-  background: #0dcaf0;
+  background: #20c997;
 }
 
 h1,
@@ -21,39 +21,18 @@ h6 {
   font-weight: bold;
 }
 
-nav {
-  padding: 20px 0;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  text-align: none;
-  color: pink;
-  transition: all 100ms ease-in-out;
-}
-
-nav a:hover,
-nav li.active a {
-  color: var(--branding-color);
-}
-
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
-}
-
 h1 {
   font-size: 96px;
   line-height: 1.5;
+  color: #20c997;
 }
 h2 {
   font-size: 64px;
 }
+h3 {
+  font-size: 48px;
+}
+
 p {
   font-weight: normal;
   font-size: 16px;
@@ -61,16 +40,17 @@ p {
 }
 
 .hero {
-  background: var(--secondary-color);
+  background: black;
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 20px;
+  color: #20c997;
 }
 
 .hero p {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
-  color: rgb(27, 2, 27);
+  color: #20c997;
 }
 
 .hero h2 {
@@ -78,12 +58,39 @@ p {
   font-weight: normal;
   line-height: 1.5;
   font-size: 24px;
+  color: #20c997;
+}
+
+.content-container {
+  padding: 60px 20px;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.content h3 {
+  font-size: 24px;
+  font-family: var(--default-font-family);
+  line-height: 1.5;
+}
+
+.content p {
+  font-size: 14px;
+}
+.content {
+  margin: 30px;
 }
 
 .btn-branding {
-  background: var(--branding-color);
+  background: #20c997;
   border-radius: 4px;
-  color: white;
+  color: rgb(221, 34, 66);
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
@@ -100,44 +107,81 @@ p {
 .project-description {
   padding: 120px 60px;
 }
-.content-container {
-  padding: 160px;
+
+nav {
+  padding: 20px 0;
 }
 
-.content h1 {
-  font-size: 64px;
-  line-height: 80px;
-}
-.content h2 {
-  font-size: 18px;
-  font-family: var(--default-font-family);
+nav ul {
+  margin: 0;
+  padding: 0;
 }
 
-.content h3 {
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 15px;
+}
+nav a {
+  text-align: none;
+  text-decoration: none;
+  color: rgb(221, 34, 66);
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
+footer {
+  margin: 60px 0;
+}
+footer.contact-box {
+  background: var(--heading-font-family);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer.contact-box p {
+  margin: 0;
+}
+
+footer.email-link {
+  text-decoration: none;
+  color: black;
   font-size: 24px;
-  font-family: var(--default-font-family);
-  line-height: 1.5;
-  margin: 20px 0 0;
+  text-align: center;
+}
+footer.email-link:hover {
+  color: var(--branding-color);
 }
 
-.content p {
-  font-size: 14px;
+footer.social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 28px;
+  transition: all 100ms ease-in-out;
 }
-.content {
-  margin: 30px;
+footer.social-links a:hover {
+  color: white;
+  background: var(--branding-color);
 }
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
-    line-height: 56px;
+    line-height: 1.5px;
   }
   h2 {
     font-size: 44px;
-    text-align: center;
   }
-
-  .hero {
-    padding: 80px 20px;
+  h3 {
+    font-size: 26px;
   }
 
   .content {
@@ -149,32 +193,4 @@ p {
     padding: 0;
     text-align: center;
   }
-}
-
-footer {
-  margin: 60px 0;
-}
-
-footer.email-link {
-  text-decoration: none;
-  color: black;
-  font-size: 24px;
-  text-align: center;
-}
-
-footer.social-links a {
-  margin: 0 20px;
-  color: var(--branding-color);
-  background: var(--secondary-color);
-  padding: 10px;
-  font-size: 18px;
-  transition: all 100ms ease-in-out;
-}
-footer.social-links a:hover {
-  color: white;
-  background: var(--branding-color);
-}
-
-footer.email-link:hover {
-  color: var(--branding-color);
 }
