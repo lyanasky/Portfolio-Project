@@ -31,11 +31,12 @@ h2 {
 }
 h3 {
   font-size: 48px;
+  color: rgb(221, 34, 66);
 }
 
 p {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -70,7 +71,7 @@ p {
   line-height: 80px;
 }
 .content h2 {
-  font-size: 18px;
+  font-size: 24px;
   font-family: var(--default-font-family);
 }
 
@@ -81,7 +82,7 @@ p {
 }
 
 .content p {
-  font-size: 14px;
+  font-size: 18px;
 }
 .content {
   margin: 30px;
@@ -138,27 +139,27 @@ nav li.active a {
 footer {
   margin: 60px 0;
 }
-footer.contact-box {
+footer .contact-box {
   background: black;
   padding: 30px 120px;
   border-radius: 10px;
 }
 
-footer.contact-box p {
+footer .contact-box p {
   margin: 0;
 }
 
-footer.email-link {
+footer .email-link {
   text-decoration: none;
   color: black;
   font-size: 24px;
 }
 
-footer.email-link:hover {
+footer .email-link:hover {
   color: var(--branding-color);
 }
 
-footer.social-links a {
+footer .social-links a {
   margin: 0 20px;
   color: var(--branding-color);
   background: var(--secondary-color);
@@ -167,7 +168,7 @@ footer.social-links a {
   font-size: 18px;
   transition: all 100ms ease-in-out;
 }
-footer.social-links a:hover {
+footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
 }
